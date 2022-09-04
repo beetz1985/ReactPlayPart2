@@ -8,8 +8,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 :root {
-    --background-dark:rgb(37, 37, 37);
-    --background-lightdark: rgb(61, 61, 61);
+    --background-dark:rgb(23, 23, 23);
+    --background-lightdark: rgb(36, 36, 36);
     --text-blue: #54c0de;
     --text-white: #f8f8f8;
     
@@ -55,6 +55,10 @@ h1, h2, h3, h4, h5, h6{
 .main-content {
     color: var(--text-white);
     background-color: var(--background-lightdark);
+    background-image: url("./logo192.png");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: 120% 25%;
     padding:40px 20px;
 }
 

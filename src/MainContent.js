@@ -1,9 +1,15 @@
 import bigLogo from './logo192.png'
 
 
-function MainContent() {
+function MainContent(props) {
+
+    const styles = {
+        backgroundColor: (props.lightMode) ? "#fff" : '',
+        color: (props.lightMode) ? "rgb(36, 36, 36)" : ''
+    }
+
     return (
-    <main className="main-content" background={bigLogo}>
+    <main className="main-content" background={bigLogo} style={styles}>
         <h1>Fun facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>
